@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learn Call back Function</h1>
+</body>
+</html>
+
+<script>
+
+    const sum=(a,iindfun)=>{
+
+        let b = 5;
+         setTimeout(()=>{
+
+        console.log(`The sum of two number is : ${a+b}`)
+        iindfun()
+
+         },3000)
+
+     }
+
+     
+     const iindfun=()=>{
+     console.log("IInd Function Running")
+     }
+
+     
+   sum(20,iindfun)
+//    iindfun()
+</script>
